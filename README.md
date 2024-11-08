@@ -1,8 +1,10 @@
-**Evaluating the Impact of Data Augmentation in Object Detection**
+****Evaluating the Impact of Data Augmentation in Object Detection****
 **Project Overview**
+
 This project evaluates the effect of different data augmentation techniques on object detection performance using the YOLOv5 model, trained on the COCO128 dataset. Various augmentation techniques, such as scaling, rotation, horizontal flipping, color jittering, Gaussian blurring, and perspective transformation, were applied. The model's performance was measured through mean Average Precision (mAP) scores.
 
 **Requirements**
+
 Required Packages and Versions
 To run this project, the following packages are required. In Google Colab, most packages come pre-installed, but for specific versions, you can use !pip install to install or upgrade as needed.
 
@@ -68,5 +70,6 @@ yolov5 (GitHub repository for YOLOv5)
 		!python val.py --img 640 --batch 16 --data /content/coco128_sc.yaml --weights /content/yolov5/runs/train/exp/weights/best.pt
 
 **Additional Notes**
+
 Data Augmentation Configuration: Modify the augmentation settings in the YAML or configuration files as needed for each test.
 Performance Metrics: Collect and compare the mAP scores for each augmentation technique to evaluate its impact on object detection performance.
